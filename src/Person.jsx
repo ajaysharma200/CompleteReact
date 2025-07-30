@@ -1,5 +1,4 @@
 import React from "react";
-import Hanumanji from "./Hanumanji";
 
 const Person = () => {
   const person = {
@@ -12,7 +11,6 @@ const Person = () => {
 
   return (
     <>
-      <Hanumanji />
       <div>
         <h1>Name = {person.name}</h1>
         <h2>Age: {person.age}</h2>
