@@ -8,6 +8,10 @@ import Counter from "./components/counter";
 import UseState from "./components/UseState"
 import Map from "./components/Map";
 import Filter from "./components/Filter";
+import UseEffect from "./components/UseEffect";
+import ApiFetch from "./components/ApiFetch";
+import FormHandling from "./components/FormHandling"
+import Multiple_Input_Handling from "./components/Multiple_Input_Handling";
 
 const App = () => {
   return (
@@ -44,7 +48,11 @@ const App = () => {
         {/* <Counter /> */}
         {/* <UseState /> */}
         {/* <Map /> */}
-        <Filter />
+        {/* <Filter /> */}
+        {/* <UseEffect /> */}
+        {/* <ApiFetch /> */}
+        {/* <FormHandling /> */}
+        <Multiple_Input_Handling />
       </div>
     </>
   );
