@@ -12,6 +12,16 @@ import UseEffect from "./components/UseEffect";
 import ApiFetch from "./components/ApiFetch";
 import FormHandling from "./components/FormHandling"
 import Multiple_Input_Handling from "./components/Multiple_Input_Handling";
+import { BrowserRouter as Router, Routes, Route  } from "react-router-dom";
+import Home from './pages/Home'
+import Team from './pages/Team'
+import About from './pages/About'
+import Courses from './pages/Courses'
+import Courses_Details from "./pages/Courses_Details";
+import Navigate from './pages/Navigate';
+
+
+
 
 const App = () => {
   return (
@@ -52,8 +62,20 @@ const App = () => {
         {/* <UseEffect /> */}
         {/* <ApiFetch /> */}
         {/* <FormHandling /> */}
-        <Multiple_Input_Handling />
+        {/* <Multiple_Input_Handling /> */}
+
       </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/navigate" element={<Navigate />} />
+           <Route path="/courses/:id" element={<Courses_Details />} />
+        </Routes> 
+      </Router>
+
     </>
   );
 };
