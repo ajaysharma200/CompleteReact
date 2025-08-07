@@ -1,5 +1,5 @@
 import React from 'react'
-import { useContext } from 'react';
+import {useCon}
 import MoneyContext from '../context/MoneyContext'
 
 const Team = () => {
