@@ -19,6 +19,8 @@ import About from './pages/About'
 import Courses from './pages/Courses'
 import Courses_Details from "./pages/Courses_Details";
 import Navigate from './pages/Navigate';
+import Navbar from './pages/Navbar';
+import { useContext } from "react";
 
 
 
@@ -66,13 +68,16 @@ const App = () => {
 
       </div>
       <Router>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/navigate" element={<Navigate />} />
-           <Route path="/courses/:id" element={<Courses_Details />} />
+           <Route path="/courses/:id" element={<Courses_Details />} /> */}
+
+           <Route path="/team" element={<Team />} />
         </Routes> 
       </Router>
 
